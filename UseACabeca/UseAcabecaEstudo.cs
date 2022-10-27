@@ -1,5 +1,5 @@
 ﻿namespace UseACabeca;
-public class Class1
+public class UseAcabecaEstudo
 {
 
 }
