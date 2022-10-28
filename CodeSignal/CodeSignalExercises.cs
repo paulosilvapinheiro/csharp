@@ -25,6 +25,28 @@ public class CodeSignalExercises
     public bool JourneyBegins_checkPalindrome(string inputString){
 
         string part1 = inputString.Substring(0,inputString.Length/2);
-        return true;
+        string part2 = new string(inputString.Reverse().ToArray()).Substring(0,inputString.Length/2);
+
+        return part1 == part2;
+    }
+
+    public int EdgeOfTheOcean_adjacentElementsProduct(int[] inputArray) {
+
+        int resultado;
+        int max;
+
+        resultado = inputArray[0] * inputArray[1];
+        max = resultado;
+
+        for (int i = 1; i < inputArray.Length - 1; i++)
+        {
+            resultado = inputArray[i] * inputArray[i+1];
+
+            if (resultado > max){
+                max = resultado;
+            }
+        }
+
+        return max;
     }
 }
