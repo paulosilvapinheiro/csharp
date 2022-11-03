@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodeSignal\CodeSignal.csproj" />
+    <ProjectReference Include="..\UseACabeca\UseACabeca.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
