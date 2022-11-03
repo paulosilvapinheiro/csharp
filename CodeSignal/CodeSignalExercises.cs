@@ -49,4 +49,9 @@ public class CodeSignalExercises
 
         return max;
     }
+
+    public int EdgeOfTheOcean_shapeArea(int inputN) {
+
+        return inputN * inputN + ( inputN -1 ) * ( inputN -1 );
+    }
 }
