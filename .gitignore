@@ -1,4 +1,0 @@
-# ignore all files in any directory named bin or obj
-bin/
-obj/
-.fake
