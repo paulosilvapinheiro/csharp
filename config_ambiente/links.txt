@@ -1,0 +1,5 @@
+
+https://code.visualstudio.com/docs/languages/dotnet
+https://aka.ms/dotnet-hello-world
+https://aka.ms/dotnet-docs
+https://learn.microsoft.com/pt-br/collections/yz26f8y64n7k07
