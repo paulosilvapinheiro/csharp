@@ -28,7 +28,11 @@ namespace learn{
             */
 
             // Exemplo condicional
-            Condicional cond = new Condicional();
+            // Condicional cond = new Condicional();
+
+            // Exemplo matrizes
+            Matrizes matr = new Matrizes();
+
         }
     }
 }
