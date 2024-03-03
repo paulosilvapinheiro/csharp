@@ -5,6 +5,10 @@ namespace learn{
     {
         private static void Main(string[] args)
         {
+            // Random dice = new Random();
+            // int roll = dice.Next(1,10);
+
+            // Console.WriteLine(roll);
             /* Exemplo de sobrecarga de metodo
             Random dice = new Random();
             int roll = dice.Next(1,7);
@@ -31,8 +35,16 @@ namespace learn{
             // Condicional cond = new Condicional();
 
             // Exemplo matrizes
-            Matrizes matr = new Matrizes();
+            // Matrizes matr = new Matrizes();
 
+            //Exemplo de booleano
+            // Booleano bo = new Booleano();
+
+            //Exemplo de Escopo
+            // Escopo es = new Escopo();
+
+            //Exemplo de Switch
+            Switch es = new Switch();
         }
     }
 }
