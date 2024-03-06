@@ -44,7 +44,10 @@ namespace learn{
             // Escopo es = new Escopo();
 
             //Exemplo de Switch
-            Switch es = new Switch();
+            // Switch es = new Switch();
+
+            //Exemplo de for
+            LoopFor lf = new LoopFor();
         }
     }
 }
