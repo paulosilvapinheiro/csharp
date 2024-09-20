@@ -1,6 +1,7 @@
 #pastas de build
 obj/
 bin/
+.vs
 
 #ignore ZIP
 *.zip
