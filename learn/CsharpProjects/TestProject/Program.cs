@@ -47,7 +47,13 @@ namespace learn{
             // Switch es = new Switch();
 
             //Exemplo de for
-            LoopFor lf = new LoopFor();
+            // LoopFor lf = new LoopFor();
+
+            //Exemplo de while
+            // LoopWhile lw = new LoopWhile();
+
+            //Exemplo de while desafio 1
+            WhileDesafio1 lw = new WhileDesafio1();
         }
     }
 }

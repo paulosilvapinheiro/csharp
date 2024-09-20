@@ -4,8 +4,20 @@ namespace learn{
 
         public LoopFor(){
 
-            for(int i=0; i < 10; i++){
-                Console.WriteLine(i);
+            // FizzBuzz
+            for(int i=1; i < 101; i++){
+
+                string Fizz="";
+                string Buzz="";
+
+                if( i % 3 == 0)
+                    Fizz = "Fizz";
+
+                if( i % 5 == 0)
+                    Buzz = "Buzz";
+
+
+                Console.WriteLine($"{i} : {Fizz}{Buzz}");
             }
         }
            
