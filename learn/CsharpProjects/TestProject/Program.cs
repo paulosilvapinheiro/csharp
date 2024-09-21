@@ -53,7 +53,10 @@ namespace learn{
             // LoopWhile lw = new LoopWhile();
 
             //Exemplo de while desafio 1
-            WhileDesafio1 lw = new WhileDesafio1();
+            // WhileDesafio1 lw = new WhileDesafio1();
+
+            //Exemplo de while desafio 2
+            WhileDesafio2 lw = new WhileDesafio2();
         }
     }
 }
