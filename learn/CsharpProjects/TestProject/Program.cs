@@ -56,7 +56,10 @@ namespace learn{
             // WhileDesafio1 lw = new WhileDesafio1();
 
             //Exemplo de while desafio 2
-            WhileDesafio2 lw = new WhileDesafio2();
+            // WhileDesafio2 lw = new WhileDesafio2();
+
+            //Exemplo de while desafio 3
+            WhileDesafio3 lw = new WhileDesafio3();
         }
     }
 }
