@@ -1,4 +1,5 @@
-﻿
+﻿using System.Globalization;
+
 namespace learn{
 
     internal class Program
@@ -59,7 +60,10 @@ namespace learn{
             // WhileDesafio2 lw = new WhileDesafio2();
 
             //Exemplo de while desafio 3
-            WhileDesafio3 lw = new WhileDesafio3();
+            // WhileDesafio3 lw = new WhileDesafio3();
+
+            //Exemplo de casting
+            Casting casting= new Casting();
         }
     }
 }
