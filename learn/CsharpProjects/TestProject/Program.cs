@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace learn{
 
@@ -63,7 +63,10 @@ namespace learn{
             // WhileDesafio3 lw = new WhileDesafio3();
 
             //Exemplo de casting
-            Casting casting= new Casting();
+            // Casting casting= new Casting();
+
+            //Exemplo de operações com Matrizes
+            OperacoesMatrizes oMatrizes = new OperacoesMatrizes();
         }
     }
 }
