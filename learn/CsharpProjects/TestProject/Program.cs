@@ -66,7 +66,10 @@ namespace learn{
             // Casting casting= new Casting();
 
             //Exemplo de operações com Matrizes
-            OperacoesMatrizes oMatrizes = new OperacoesMatrizes();
+            // OperacoesMatrizes oMatrizes = new OperacoesMatrizes();
+
+            //Exemplo de formatações em dados alfanumericos
+            FormatarDadosAlfanumericos formatarDadosAlfanumericos= new FormatarDadosAlfanumericos();
         }
     }
 }
