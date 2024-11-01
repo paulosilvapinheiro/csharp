@@ -296,6 +296,43 @@ namespace learn{
             message = message.Replace("--", " ");
             message = message.Replace("-", "");
             Console.WriteLine(message);
+
+            // ------------------------------------------------------------------------------------
+            // Exercício: conclua um desafio para extrair, substituir e remover os dados de uma cadeia de caracteres de entrada
+            // ------------------------------------------------------------------------------------
+            Console.WriteLine("\n\n");
+            Console.WriteLine(@"// ------------------------------------------------------------------------------------
+// Exercício: conclua um desafio para extrair, substituir e remover os dados de uma cadeia de caracteres de entrada
+// ------------------------------------------------------------------------------------");
+
+            const string inputHTML = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+
+            string quantity = "";
+            string output = "";
+
+            string openTag = "<span>";
+            string closeTag = "</span>";
+
+            int start = inputHTML.IndexOf(openTag);
+            int end = inputHTML.IndexOf(closeTag);
+
+            start += openTag.Length;
+            length = end - start;
+            quantity = $"Quantity: {inputHTML.Substring(start, length)}";
+
+            openTag = "<div>";
+            closeTag = "</div>";
+
+            start = inputHTML.IndexOf(openTag);
+            end = inputHTML.IndexOf(closeTag);
+
+            start += openTag.Length;
+            length = end - start;
+            output = $"Output: {inputHTML.Substring(start, length).Replace("&trade", "&reg")}";
+
+            Console.WriteLine(quantity);
+            Console.WriteLine(output);
+            
         }
     }
 }
