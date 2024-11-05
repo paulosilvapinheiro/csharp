@@ -69,7 +69,11 @@ namespace learn{
             // OperacoesMatrizes oMatrizes = new OperacoesMatrizes();
 
             //Exemplo de formatações em dados alfanumericos
-            FormatarDadosAlfanumericos formatarDadosAlfanumericos= new FormatarDadosAlfanumericos();
+            // FormatarDadosAlfanumericos formatarDadosAlfanumericos= new FormatarDadosAlfanumericos();
+
+            //Exemplo de utilização de métodos
+            Metodos metodos= new Metodos();
+
         }
     }
 }
