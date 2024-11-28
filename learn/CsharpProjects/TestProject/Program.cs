@@ -72,8 +72,28 @@ namespace learn{
             // FormatarDadosAlfanumericos formatarDadosAlfanumericos= new FormatarDadosAlfanumericos();
 
             //Exemplo de utilização de métodos
-            Metodos metodos= new Metodos();
+            // Metodos metodos= new Metodos();
+
+            //Exercício – Concluir o desafio de criar um método reutilizável
+            // MetodosDesafio1 metodos= new MetodosDesafio1();
+
+            //Exercício – Concluir o desafio de criar um método reutilizável
+            // MetodosEscopo metodos= new MetodosEscopo();
+
+            //Exercício – Criar um aplicativo RSVP
+            // MetodosSistemaRSVP metodos = new MetodosSistemaRSVP();
+
+            //Exercício – Concluir o desafio de exibir endereços de email
+            // MetodosEnderecoEmail metodos = new MetodosEnderecoEmail();
+            
+            //Exercício – Entender a sintaxe do tipo de retorno
+            // MetodosRetorno metodos = new MetodosRetorno();
+
+            //Exercício – Desafio de minijogo de dados
+            MetodosJogoDados metodos = new MetodosJogoDados();
+
 
         }
     }
 }
+
