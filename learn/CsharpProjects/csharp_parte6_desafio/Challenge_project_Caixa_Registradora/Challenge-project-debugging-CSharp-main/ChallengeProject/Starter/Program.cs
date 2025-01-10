@@ -24,6 +24,8 @@ bool useTestData = false;
 Console.Clear();
 
 int[] cashTill = new int[] { 0, 0, 0, 0 };
+int[] cashTillBackup = new int[cashTill.Length];
+
 int registerCheckTillTotal = 0;
 
 // registerDailyStartingCash: $1 x 50, $5 x 20, $10 x 10, $20 x 5 => ($350 total)
@@ -80,6 +82,13 @@ while (transactions > 0)
 
     try
     {
+
+        // Realiza o Backup do cashTill para ser utilizado em um eventual RollBack
+        for(int i = 0;i < cashTill.Length;i++)
+        {
+            cashTillBackup[i] = cashTill[i];
+        }
+
         // MakeChange manages the transaction and updates the till 
         MakeChange(itemCost, cashTill, paymentTwenties, paymentTens, paymentFives, paymentOnes);
 
@@ -89,6 +98,7 @@ while (transactions > 0)
     catch (InvalidOperationException e)
     {
         Console.WriteLine($"Could not complete transaction: {e.Message}");
+        cashTill = RollBackOperationMakeChange(cashTill, cashTillBackup);
     }
 
     Console.WriteLine(TillAmountSummary(cashTill));
@@ -112,6 +122,19 @@ static void LoadTillEachMorning(int[,] registerDailyStartingCash, int[] cashTill
     cashTill[3] = registerDailyStartingCash[3, 1];
 }
 
+static int[] RollBackOperationMakeChange(int[] cashTill, int[] cashTillBackup)
+{
+    int [] rollBack = new int[cashTillBackup.Length];
+    
+    for(int i = 0; i < cashTillBackup.Length; i++)
+    {
+        rollBack[i]= cashTillBackup[i];
+    }
+    
+    Console.WriteLine("Operation RollBack successfully completed!!!");
+
+    return rollBack;
+}
 
 static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
 {
